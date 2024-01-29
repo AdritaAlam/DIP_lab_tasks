@@ -11,8 +11,8 @@ def Opening(image,se):
 
 def Closing(image,se):
     ci = image.copy()
-    ci = Erosion(ci,se)
-    mi = Dilation(ci,se)
+    ci = Dilation(ci,se)
+    mi = Erosion(ci,se)
     return mi
 
 
